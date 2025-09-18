@@ -103,7 +103,7 @@ export function GardenCard({
           <div className="text-center p-2 bg-gray-50 rounded">
             <div className="w-3 h-3 mx-auto mb-1 bg-blue-400 rounded-full"></div>
             <div>Water</div>
-            <div className="font-medium">{waterDepth}cm</div>
+            <div className="font-medium">{waterDepth}mm</div>
           </div>
         </div>
       </div>

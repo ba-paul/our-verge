@@ -41,7 +41,20 @@ interface GardenDetailViewProps {
 
 export function GardenDetailView({ garden, onBack }: GardenDetailViewProps) {
   const [newComment, setNewComment] = useState("");
+  const [comments, setComments] = useState(garden.comments || []);
   const [showMaintenanceForm, setShowMaintenanceForm] = useState(false);
+  const [reportSubmitted, setReportSubmitted] = useState(false);
+
+  const randomNames = [
+    "Sarah M.", "Mike T.", "Emily R.", "Tom B.", 
+    "Jasmine K.", "Liam P.", "Olivia W.", "Noah C.", 
+    "Grace L.", "Ethan J."
+  ];
+
+  function getRandomName() {
+    return randomNames[Math.floor(Math.random() * randomNames.length)];
+  }
+  
 
   const getHealthScore = () => {
     switch (garden.health) {
@@ -170,23 +183,37 @@ export function GardenDetailView({ garden, onBack }: GardenDetailViewProps) {
           </Button>
         </div>
 
-        {/* Maintenance Form */}
         {showMaintenanceForm && (
           <Card>
             <CardHeader>
               <CardTitle>Maintenance Report</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              <Textarea
-                placeholder="Describe the maintenance issue or work completed..."
-                className="min-h-24"
-              />
-              <div className="flex gap-2">
-                <Button>Submit Report</Button>
-                <Button variant="outline" onClick={() => setShowMaintenanceForm(false)}>
-                  Cancel
-                </Button>
-              </div>
+              {!reportSubmitted ? (
+                <>
+                  <Textarea
+                    placeholder="Describe the maintenance issue or work completed..."
+                    className="min-h-24"
+                  />
+                  <div className="flex gap-2">
+                    <Button onClick={() => setReportSubmitted(true)}>
+                      Submit Report
+                    </Button>
+                    <Button variant="outline" onClick={() => setShowMaintenanceForm(false)}>
+                      Cancel
+                    </Button>
+                  </div>
+                </>
+              ) : (
+                <div className="text-center space-y-4">
+                  <p className="text-green-600 font-medium">
+                    Maintenance report successfully lodged!
+                  </p>
+                  <Button onClick={() => { setReportSubmitted(false); setShowMaintenanceForm(false); }}>
+                    Close
+                  </Button>
+                </div>
+              )}
             </CardContent>
           </Card>
         )}
@@ -207,9 +234,9 @@ export function GardenDetailView({ garden, onBack }: GardenDetailViewProps) {
                     <div className="font-medium">{plant.name}</div>
                     <div className="text-sm text-gray-600 italic">{plant.scientificName}</div>
                   </div>
-                  <Badge 
-                    variant={plant.status === "healthy" ? "default" : 
-                            plant.status === "needs-attention" ? "secondary" : "destructive"}
+                  <Badge
+                    variant={plant.status === "healthy" ? "default" :
+                      plant.status === "needs-attention" ? "secondary" : "destructive"}
                   >
                     {plant.status.replace("-", " ")}
                   </Badge>
@@ -219,7 +246,6 @@ export function GardenDetailView({ garden, onBack }: GardenDetailViewProps) {
           </CardContent>
         </Card>
 
-        {/* Comments Section */}
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
@@ -236,12 +262,27 @@ export function GardenDetailView({ garden, onBack }: GardenDetailViewProps) {
                 placeholder="Add a note about planting, weeding, or observations..."
                 className="min-h-20"
               />
-              <Button onClick={() => setNewComment("")}>Add Comment</Button>
+              <Button
+                onClick={() => {
+                  if (!newComment.trim()) return;
+                  const newEntry = {
+                    id: Date.now().toString(),
+                    author: getRandomName(),
+                    date: new Date().toLocaleDateString(),
+                    content: newComment.trim(),
+                    type: "observation",
+                  };
+                  setComments([newEntry, ...comments]); // prepend new comment
+                  setNewComment("");
+                }}
+              >
+                Add Comment
+              </Button>
             </div>
 
             {/* Comments List */}
             <div className="space-y-3">
-              {garden.comments.map((comment) => (
+              {comments.map((comment) => (
                 <div key={comment.id} className="p-3 bg-gray-50 rounded-lg">
                   <div className="flex items-center justify-between mb-2">
                     <div className="font-medium">{comment.author}</div>

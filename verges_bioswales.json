@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "1",
+    "name": "South Bank Riverside Verge",
+    "location": "Grey St & Tribune St, Brisbane",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "fair",
+    "soilMoisture": 61,
+    "pH": 6.6,
+    "waterDepth": 60,
+    "floodRisk": "medium",
+    "lat": -27.4811,
+    "lng": 153.0234,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "1",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Roma Street Bioswale",
+    "location": "Roma St Parklands, Brisbane",
+    "type": "BS",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "poor",
+    "soilMoisture": 62,
+    "pH": 6.7,
+    "waterDepth": 70,
+    "floodRisk": "high",
+    "lat": -27.4647,
+    "lng": 153.0192,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "2",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Bulimba Riverside Verge",
+    "location": "Oxford St & Riding Rd, Bulimba",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "good",
+    "soilMoisture": 63,
+    "pH": 6.8,
+    "waterDepth": 80,
+    "floodRisk": "low",
+    "lat": -27.4498,
+    "lng": 153.0563,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "3",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Broadbeach Bioswale",
+    "location": "Gold Coast Hwy & Victoria Ave, Broadbeach",
+    "type": "BS",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "fair",
+    "soilMoisture": 64,
+    "pH": 6.9,
+    "waterDepth": 90,
+    "floodRisk": "medium",
+    "lat": -28.0275,
+    "lng": 153.4323,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "4",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Noosa River Verge",
+    "location": "Gympie Terrace, Noosaville",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "poor",
+    "soilMoisture": 65,
+    "pH": 6.5,
+    "waterDepth": 100,
+    "floodRisk": "high",
+    "lat": -26.398,
+    "lng": 153.0594,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "5",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Kangaroo Point Verge Garden",
+    "location": "Main St & River Tce, Kangaroo Point",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "good",
+    "soilMoisture": 66,
+    "pH": 6.6,
+    "waterDepth": 110,
+    "floodRisk": "low",
+    "lat": -27.4735,
+    "lng": 153.0367,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "6",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "West End Bioswale",
+    "location": "Boundary St & Vulture St, West End",
+    "type": "BS",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "fair",
+    "soilMoisture": 67,
+    "pH": 6.7,
+    "waterDepth": 120,
+    "floodRisk": "medium",
+    "lat": -27.4825,
+    "lng": 153.0122,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "7",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "New Farm Park Verge",
+    "location": "Brunswick St & Sydney St, New Farm",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "poor",
+    "soilMoisture": 68,
+    "pH": 6.8,
+    "waterDepth": 130,
+    "floodRisk": "high",
+    "lat": -27.4672,
+    "lng": 153.0491,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "8",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Surfers Paradise Bioswale",
+    "location": "Ferny Ave & Cavill Ave, Surfers Paradise",
+    "type": "BS",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "good",
+    "soilMoisture": 69,
+    "pH": 6.9,
+    "waterDepth": 140,
+    "floodRisk": "low",
+    "lat": -28.0027,
+    "lng": 153.429,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "9",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Mooloolaba Foreshore Verge",
+    "location": "Mooloolaba Esplanade, Mooloolaba",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "fair",
+    "soilMoisture": 70,
+    "pH": 6.5,
+    "waterDepth": 150,
+    "floodRisk": "medium",
+    "lat": -26.6818,
+    "lng": 153.1197,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "10",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "name": "Southport Park Verge",
+    "location": "Queen St & Nerang St, Southport",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "poor",
+    "soilMoisture": 71,
+    "pH": 6.6,
+    "waterDepth": 160,
+    "floodRisk": "high",
+    "lat": -27.9664,
+    "lng": 153.3976,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "11",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Coolangatta Bioswale",
+    "location": "Marine Parade, Coolangatta",
+    "type": "BS",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "good",
+    "soilMoisture": 72,
+    "pH": 6.7,
+    "waterDepth": 17,
+    "floodRisk": "low",
+    "lat": -28.1679,
+    "lng": 153.5363,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "12",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Caloundra Verge Strip",
+    "location": "Bulcock Beach Esplanade, Caloundra",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "fair",
+    "soilMoisture": 73,
+    "pH": 6.8,
+    "waterDepth": 180,
+    "floodRisk": "medium",
+    "lat": -26.8053,
+    "lng": 153.1331,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "13",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Palm Beach Bioswale",
+    "location": "Gold Coast Hwy & Palm Beach Ave, Palm Beach",
+    "type": "BS",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "poor",
+    "soilMoisture": 74,
+    "pH": 6.9,
+    "waterDepth": 190,
+    "floodRisk": "high",
+    "lat": -28.1173,
+    "lng": 153.4716,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "14",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "name": "Redcliffe Foreshore Verge",
+    "location": "Marine Parade, Redcliffe",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "good",
+    "soilMoisture": 75,
+    "pH": 6.5,
+    "waterDepth": 200,
+    "floodRisk": "low",
+    "lat": -27.2309,
+    "lng": 153.1156,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "15",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "name": "Currumbin Creek Bioswale",
+    "location": "Duringan St, Currumbin",
+    "type": "BS",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "fair",
+    "soilMoisture": 76,
+    "pH": 6.6,
+    "waterDepth": 21,
+    "floodRisk": "medium",
+    "lat": -28.1352,
+    "lng": 153.4824,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "16",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "name": "Maroochy River Verge",
+    "location": "Duporth Ave, Maroochydore",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "poor",
+    "soilMoisture": 77,
+    "pH": 6.7,
+    "waterDepth": 220,
+    "floodRisk": "high",
+    "lat": -26.65,
+    "lng": 153.09,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "17",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "name": "Broadwater Parklands Verge",
+    "location": "Marine Parade, Southport",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "good",
+    "soilMoisture": 78,
+    "pH": 6.8,
+    "waterDepth": 23,
+    "floodRisk": "low",
+    "lat": -27.967,
+    "lng": 153.414,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "18",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "name": "Robina Bioswale",
+    "location": "Robina Town Centre Dr, Robina",
+    "type": "BS",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "fair",
+    "soilMoisture": 79,
+    "pH": 6.9,
+    "waterDepth": 155,
+    "floodRisk": "medium",
+    "lat": -28.0711,
+    "lng": 153.3794,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "19",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "name": "Caboolture Verge Garden",
+    "location": "King St, Caboolture",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "poor",
+    "soilMoisture": 80,
+    "pH": 6.5,
+    "waterDepth": 534,
+    "floodRisk": "high",
+    "lat": -27.0846,
+    "lng": 152.9512,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "20",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "name": "Tewantin Bioswale",
+    "location": "Hilton Tce, Tewantin",
+    "type": "BS",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "good",
+    "soilMoisture": 81,
+    "pH": 6.6,
+    "waterDepth": 60,
+    "floodRisk": "low",
+    "lat": -26.391,
+    "lng": 153.0394,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "21",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "22",
+    "name": "Burleigh Heads Verge",
+    "location": "Goodwin Tce, Burleigh Heads",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "fair",
+    "soilMoisture": 82,
+    "pH": 6.7,
+    "waterDepth": 200,
+    "floodRisk": "medium",
+    "lat": -28.09,
+    "lng": 153.452,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "22",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "name": "Logan River Bioswale",
+    "location": "Logan River Parklands, Beenleigh",
+    "type": "BS",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "poor",
+    "soilMoisture": 83,
+    "pH": 6.8,
+    "waterDepth": 800,
+    "floodRisk": "high",
+    "lat": -27.715,
+    "lng": 153.2,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "23",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "name": "Chermside Verge",
+    "location": "Hamilton Rd, Chermside",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "good",
+    "soilMoisture": 84,
+    "pH": 6.9,
+    "waterDepth": 90,
+    "floodRisk": "low",
+    "lat": -27.3852,
+    "lng": 153.0404,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "24",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "name": "Helensvale Bioswale",
+    "location": "Helensvale Rd, Helensvale",
+    "type": "BS",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "fair",
+    "soilMoisture": 85,
+    "pH": 6.5,
+    "waterDepth": 100,
+    "floodRisk": "medium",
+    "lat": -27.9077,
+    "lng": 153.3351,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "25",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "name": "Spring Hill Verge",
+    "location": "Boundary St & Wickham Tce, Spring Hill",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "poor",
+    "soilMoisture": 86,
+    "pH": 6.6,
+    "waterDepth": 976,
+    "floodRisk": "high",
+    "lat": -27.461,
+    "lng": 153.0227,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "26",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "name": "Ipswich Bioswale",
+    "location": "Brisbane St, Ipswich",
+    "type": "BS",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "good",
+    "soilMoisture": 87,
+    "pH": 6.7,
+    "waterDepth": 12,
+    "floodRisk": "low",
+    "lat": -27.6167,
+    "lng": 152.7667,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "27",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "name": "Sunshine Plaza Verge",
+    "location": "Horton Pde, Maroochydore",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "fair",
+    "soilMoisture": 88,
+    "pH": 6.8,
+    "waterDepth": 130,
+    "floodRisk": "medium",
+    "lat": -26.652,
+    "lng": 153.089,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "28",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "29",
+    "name": "Griffith Uni Bioswale",
+    "location": "Parklands Dr, Southport",
+    "type": "BS",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "poor",
+    "soilMoisture": 89,
+    "pH": 6.9,
+    "waterDepth": 14,
+    "floodRisk": "high",
+    "lat": -27.9595,
+    "lng": 153.3825,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "29",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "name": "Mt Gravatt Verge",
+    "location": "Logan Rd, Mt Gravatt",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+    "health": "good",
+    "soilMoisture": 90,
+    "pH": 6.5,
+    "waterDepth": 77,
+    "floodRisk": "low",
+    "lat": -27.5444,
+    "lng": 153.082,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "30",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      }
+    ]
+  }
+]

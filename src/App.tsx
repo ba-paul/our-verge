@@ -1,175 +1,140 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { LocationSearchBar } from "./components/LocationSearchBar";
 import { GardenFilterBar } from "./components/GardenFilterBar";
 import { MapView } from "./components/MapView";
 import { GardenCard } from "./components/GardenCard";
 import { GardenDetailView } from "./components/GardenDetailView";
 import logo from '../images/the-verge-logo-2.png'; 
-import hero from '../images/verge-hero-photo.jpg'; 
+import hero from '../images/verge-banner.jpg'; 
+import gardensData from '../verges_bioswales_enriched.json';
 
-
-// Mock data for gardens
-const gardens = [
-  {
-    id: "1",
-    name: "Riverside Verge Garden",
-    location: "Main St & River Ave, Portland",
-    type: "VG" as const,
-    imageUrl: "https://images.unsplash.com/photo-1699616784901-836039b5cead?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1cmJhbiUyMGdhcmRlbiUyMHBhcmt8ZW58MXx8fHwxNzU3NjQxMzUzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    health: "good" as const,
-    soilMoisture: 75,
-    pH: 6.8,
-    waterDepth: 12,
-    floodRisk: "low" as const,
-    lat: -26.8241352382323,
-    lng: 153.0549933062039,
-    plants: [
-      { name: "Pacific Ninebark", scientificName: "Physocarpus capitatus", status: "healthy" as const },
-      { name: "Oregon Grape", scientificName: "Mahonia aquifolium", status: "healthy" as const },
-      { name: "Red Flowering Currant", scientificName: "Ribes sanguineum", status: "needs-attention" as const },
-    ],
-    comments: [
-      {
-        id: "1",
-        author: "Sarah M.",
-        date: "2 days ago",
-        content: "Completed weekly weeding and noticed new growth on the ninebark shrubs.",
-        type: "maintenance" as const,
-      },
-      {
-        id: "2",
-        author: "Mike T.",
-        date: "1 week ago",
-        content: "Some of the currant plants look like they need pruning.",
-        type: "observation" as const,
-      },
-    ],
-  },
-  {
-    id: "2",
-    name: "Downtown Bioswale",
-    location: "5th Ave & Pine St, Seattle",
-    type: "BS" as const,
-    imageUrl: "https://images.unsplash.com/photo-1666228459069-d308cbea796b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiaW9zd2FsZSUyMHJhaW4lMjBnYXJkZW58ZW58MXx8fHwxNzU3NjQxMzU0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    health: "fair" as const,
-    soilMoisture: 85,
-    pH: 7.2,
-    waterDepth: 18,
-    floodRisk: "medium" as const,
-    lat: 45,
-    lng: 60,
-    plants: [
-      { name: "Sedge", scientificName: "Carex obnupta", status: "healthy" as const },
-      { name: "Douglas Iris", scientificName: "Iris douglasiana", status: "healthy" as const },
-      { name: "Rushes", scientificName: "Juncus patens", status: "poor" as const },
-    ],
-    comments: [
-      {
-        id: "3",
-        author: "City Maintenance",
-        date: "3 days ago",
-        content: "Drainage inspection completed. Water flow is adequate but monitoring needed.",
-        type: "maintenance" as const,
-      },
-    ],
-  },
-  {
-    id: "3",
-    name: "Hillside Native Garden",
-    location: "Oak St Slope, San Francisco",
-    type: "VG" as const,
-    imageUrl: "https://images.unsplash.com/photo-1706644533651-0b8cf3909f97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2ZXJnZSUyMGdhcmRlbiUyMHBsYW50c3xlbnwxfHx8fDE3NTc2NDEzNTN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    health: "good" as const,
-    soilMoisture: 65,
-    pH: 6.5,
-    waterDepth: 8,
-    floodRisk: "low" as const,
-    lat: 70,
-    lng: 25,
-    plants: [
-      { name: "California Poppies", scientificName: "Eschscholzia californica", status: "healthy" as const },
-      { name: "Lavender", scientificName: "Lavandula stoechas", status: "healthy" as const },
-      { name: "Sage", scientificName: "Salvia leucantha", status: "healthy" as const },
-    ],
-    comments: [
-      {
-        id: "4",
-        author: "Garden Volunteer",
-        date: "5 days ago",
-        content: "Added mulch around the poppy beds and removed invasive weeds.",
-        type: "maintenance" as const,
-      },
-    ],
-  },
-  {
-    id: "4",
-    name: "Community Wildflower Strip",
-    location: "Elm Ave Median, Denver",
-    type: "VG" as const,
-    imageUrl: "https://images.unsplash.com/photo-1754373647291-2206bdafbd5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuYXRpdmUlMjBwbGFudHMlMjB3aWxkZmxvd2Vyc3xlbnwxfHx8fDE3NTc2NDEzNTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    health: "good" as const,
-    soilMoisture: 70,
-    pH: 7.0,
-    waterDepth: 5,
-    floodRisk: "low" as const,
-    lat: 35,
-    lng: 80,
-    plants: [
-      { name: "Black-eyed Susan", scientificName: "Rudbeckia hirta", status: "healthy" as const },
-      { name: "Purple Coneflower", scientificName: "Echinacea purpurea", status: "healthy" as const },
-      { name: "Native Grasses", scientificName: "Bouteloua gracilis", status: "needs-attention" as const },
-    ],
-    comments: [
-      {
-        id: "5",
-        author: "Lisa K.",
-        date: "1 day ago",
-        content: "Beautiful bloom season! The coneflowers are attracting lots of bees.",
-        type: "observation" as const,
-      },
-    ],
-  },
-  {
-    id: "5",
-    name: "Flood Management Bioswale",
-    location: "Industrial Way, Portland",
-    type: "BS" as const,
-    imageUrl: "https://images.unsplash.com/photo-1695462131713-7bbfb8317ac4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBnYXJkZW4lMjBtYWludGVuYW5jZXxlbnwxfHx8fDE3NTc2NDEzNTV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    health: "poor" as const,
-    soilMoisture: 95,
-    pH: 7.8,
-    waterDepth: 22,
-    floodRisk: "high" as const,
-    lat: 55,
-    lng: 15,
-    plants: [
-      { name: "Cattails", scientificName: "Typha latifolia", status: "healthy" as const },
-      { name: "Water Iris", scientificName: "Iris pseudacorus", status: "needs-attention" as const },
-      { name: "Willow Shrubs", scientificName: "Salix lucida", status: "poor" as const },
-    ],
-    comments: [
-      {
-        id: "6",
-        author: "Emergency Services",
-        date: "Today",
-        content: "High water alert - monitoring for potential overflow. Drainage maintenance scheduled.",
-        type: "concern" as const,
-      },
-    ],
-  },
-];
+// Use data from JSON file with proper typing
+const gardens = gardensData as Array<{
+  id: string;
+  name: string;
+  location: string;
+  type: "VG" | "BS";
+  imageUrl: string;
+  health: "good" | "fair" | "poor";
+  soilMoisture: number;
+  pH: number;
+  waterDepth: number;
+  floodRisk: "low" | "medium" | "high";
+  lat: number;
+  lng: number;
+  plants: Array<{
+    name: string;
+    scientificName: string;
+    status: "healthy" | "needs-attention" | "poor";
+  }>;
+  comments: Array<{
+    id: string;
+    author: string;
+    date: string;
+    content: string;
+    type: "maintenance" | "observation" | "concern";
+  }>;
+}>;
 
 export default function App() {
   const [selectedGarden, setSelectedGarden] = useState<typeof gardens[0] | null>(null);
   const [viewMode, setViewMode] = useState<"list" | "map">("list");
+  const [activeFilter, setActiveFilter] = useState<"all" | "VG" | "BS">("all");
+  const [searchQuery, setSearchQuery] = useState<string>("");
+  const [userLocation, setUserLocation] = useState<{lat: number, lng: number} | null>(null);
+  const [nearbyRadius, setNearbyRadius] = useState<number>(5); // km
 
   const handleGardenClick = (garden: typeof gardens[0]) => {
     setSelectedGarden(garden);
   };
 
+  const handleMapGardenClick = (garden: any) => {
+    // Find the full garden object from our data
+    const fullGarden = gardens.find(g => g.id === garden.id);
+    if (fullGarden) {
+      setSelectedGarden(fullGarden);
+    }
+  };
+
   const handleBackClick = () => {
     setSelectedGarden(null);
   };
+
+  const handleFilterChange = (filter: "all" | "VG" | "BS") => {
+    setActiveFilter(filter);
+  };
+
+  const handleSearchChange = (query: string) => {
+    setSearchQuery(query);
+  };
+
+  // Function to calculate distance between two points using Haversine formula
+  const calculateDistance = (lat1: number, lng1: number, lat2: number, lng2: number): number => {
+    const R = 6371; // Earth's radius in kilometers
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLng = (lng2 - lng1) * Math.PI / 180;
+    const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+              Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+              Math.sin(dLng/2) * Math.sin(dLng/2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+    return R * c;
+  };
+
+  // Function to get user's current location
+  const getUserLocation = () => {
+    if (!navigator.geolocation) {
+      alert('Geolocation is not supported by this browser.');
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { latitude, longitude } = position.coords;
+        setUserLocation({ lat: latitude, lng: longitude });
+        console.log('User location:', latitude, longitude);
+      },
+      (error) => {
+        console.error('Error getting location:', error);
+        alert('Unable to retrieve your location. Please check your browser permissions.');
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 10000,
+        maximumAge: 300000 // 5 minutes
+      }
+    );
+  };
+
+  // Filter gardens based on active filter, search query, and nearby location
+  const filteredGardens = gardens.filter(garden => {
+    // Filter by type
+    const typeMatch = activeFilter === "all" || garden.type === activeFilter;
+    
+    // Enhanced search - includes name, location, and type
+    const searchMatch = !searchQuery || (() => {
+      const query = searchQuery.toLowerCase();
+      return (
+        garden.name.toLowerCase().includes(query) ||
+        garden.location.toLowerCase().includes(query) ||
+        (garden.type === "VG" && (query.includes("verge") || query.includes("garden"))) ||
+        (garden.type === "BS" && (query.includes("bioswale") || query.includes("swale"))) ||
+        query.includes(garden.type.toLowerCase())
+      );
+    })();
+    
+    // Filter by nearby location if user location is available
+    const nearbyMatch = !userLocation || (() => {
+      const distance = calculateDistance(
+        userLocation.lat, 
+        userLocation.lng, 
+        garden.lat, 
+        garden.lng
+      );
+      return distance <= nearbyRadius;
+    })();
+    
+    return typeMatch && searchMatch && nearbyMatch;
+  });
 
   if (selectedGarden) {
     return (
@@ -183,75 +148,121 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="sticky top-0 z-50 bg-white border-b">
+      <header className="sticky top-0 z-50 bg-white bg-no-repeat bg-cover bg-center" style={{ backgroundImage: `url(${hero})` }}>
         <div className="px-6 py-4">
-          {/* <div className="flex items-center">
-            <img
-              src={hero}
-              alt="Logo"
-              className="max-h-[200px] w-auto h-auto object-contain mx-auto"
-            />
-          </div> */}
           <div className="flex items-center justify-center mb-4">
-            { }
             <div className="flex items-center">
-              <img className="w-[100px]" src={logo} alt="Logo" />
+              <img className="w-[120px]" src={logo} alt="Logo" />
             </div>
           </div>
 
           {/* Search Bar */}
-          <LocationSearchBar />
+          <LocationSearchBar
+            searchQuery={searchQuery}
+            onSearchChange={handleSearchChange}
+            onGetLocation={getUserLocation}
+            userLocation={userLocation}
+            nearbyRadius={nearbyRadius}
+            onRadiusChange={setNearbyRadius}
+          />
         </div>
 
         {/* Filter Bar */}
-        <GardenFilterBar />
+        <GardenFilterBar activeFilter={activeFilter} onFilterChange={handleFilterChange} />
       </header>
 
       {/* Main Content */}
-      <main className="px-6 py-6">
-        {/* View Toggle */}
-        <div className="flex items-center gap-2 px-3 rounded-lg p-1">
-          <button
-            onClick={() => setViewMode("list")}
-            className={`px-3 py-1 rounded text-sm transition-colors ${viewMode === "list" ? "bg-white text-gray-900 shadow-sm" : "text-gray-600"
-              }`}
-          >
-            List
-          </button>
-          <button
-            onClick={() => setViewMode("map")}
-            className={`px-3 py-1 rounded text-sm transition-colors ${viewMode === "map" ? "bg-white text-gray-900 shadow-sm" : "text-gray-600"
-              }`}
-          >
-            Map
-          </button>
+      <main className="px-6 py-3">
+        {/* Search Results and View Toggle */}
+        <div className="flex items-center justify-between mb-3">
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setViewMode("list")}
+              className={`px-3 py-2 rounded-full text-sm transition-colors ${viewMode === "list"
+                  ? "text-green-700 bg-green-50 border border-green-200"
+                  : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+                }`}
+            >
+              List
+            </button>
+            <button
+              onClick={() => setViewMode("map")}
+              className={`px-3 py-2 rounded-full text-sm transition-colors ${viewMode === "map"
+                  ? "text-green-700 bg-green-50 border border-green-200"
+                  : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+                }`}
+            >
+              Map
+            </button>
+          </div>
+
+          {/* Search Results Counter */}
+          {(searchQuery || userLocation) && (
+            <div className="text-sm text-gray-600">
+              {filteredGardens.length} garden{filteredGardens.length !== 1 ? 's' : ''} found
+              {userLocation && ` within ${nearbyRadius}km`}
+            </div>
+          )}
         </div>
         <div className="max-w-7xl mx-auto">
           {viewMode === "map" ? (
-            <MapView gardens={gardens} onGardenClick={handleGardenClick} />
+            <MapView gardens={filteredGardens} onGardenClick={handleMapGardenClick} />
           ) : (
             <>
               {/* Gardens Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {gardens.map((garden) => (
+                {filteredGardens.map((garden) => (
                   <GardenCard
                     key={garden.id}
-                    {...garden}
+                    id={garden.id}
+                    name={garden.name}
+                    location={garden.location}
+                    type={garden.type}
+                    imageUrl={garden.imageUrl}
+                    health={garden.health}
+                    soilMoisture={garden.soilMoisture}
+                    pH={garden.pH}
+                    waterDepth={garden.waterDepth}
+                    floodRisk={garden.floodRisk}
                     onClick={() => handleGardenClick(garden)}
                   />
                 ))}
               </div>
 
-              {/* Load more gardens placeholder */}
-              <div className="flex justify-center mt-12">
-                <button className="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
-                  Show more gardens
-                </button>
-              </div>
             </>
           )}
         </div>
       </main>
+
+      <footer className="bg-gray-900 text-gray-300 py-8 mt-12">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Column 1 */}
+          <div>
+            <h3 className="text-black text-lg pb-3 font-semibold mb-3 border-b border-gray-300">Our Verge</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="hover:text-white">About Us</a></li>
+              <li><a href="#" className="hover:text-white">FAQ</a></li>
+              <li><a href="#" className="hover:text-white">Contact</a></li>
+            </ul>
+          </div>
+
+          {/* Column 2 */}
+          <div className="pb-3">
+            <h3 className="text-black text-lg pb-3 font-semibold mb-3 border-b border-gray-300">Resources</h3>
+            <ul className="space-y-2 ">
+              <li><a href="#" className="hover:text-white">Acknowledgment of Country</a></li>
+              <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
+              <li><a href="#" className="hover:text-white">Terms of Use</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        {/* Bottom bar */}
+        <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm text-gray-400">
+          © {new Date().getFullYear()} Example Project. All rights reserved.
+        </div>
+      </footer>
     </div>
   );
 }

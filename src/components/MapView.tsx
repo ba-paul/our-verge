@@ -6,6 +6,7 @@ import { Badge } from "./ui/badge";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import palmTreeIcon from "../../images/tree-palm-regular-full.svg";
 
 interface Garden {
   id: string;
@@ -26,39 +27,59 @@ interface MapViewProps {
   onGardenClick: (garden: Garden) => void;
 }
 
-function useColoredDivIcon(g: Garden) {
-  return useMemo(
-    () =>
-      L.divIcon({
-        className: "",
-        html: `
-          <div style="
-            position:relative;
-            width:22px;height:22px;border-radius:9999px;
-            border:2px solid #fff;
-            box-shadow:0 2px 6px rgba(0,0,0,.25);
-            background:${g.type === "VG" ? "#22c55e" : "#3b82f6"}">
-            <div style="
-              position:absolute;left:-4px;top:-4px;width:8px;height:8px;border:1px solid #fff;border-radius:9999px;
-              background:${g.health === "good" ? "#4ade80" : g.health === "fair" ? "#facc15" : "#ef4444"}">
-            </div>
-            ${g.floodRisk === "high"
-              ? `<div style="position:absolute;right:-3px;top:-3px;width:6px;height:6px;border-radius:9999px;background:#ef4444"></div>`
-              : ""}
-          </div>`,
-        iconSize: [22, 22],
-        iconAnchor: [11, 11],
-      }),
-    [g]
-  );
-}
+// Create custom palm tree icons
+const createPalmTreeIcon = (type: "VG" | "BS", health: "good" | "fair" | "poor", floodRisk: "low" | "medium" | "high") => {
+  const color = type === "VG" ? "#22c55e" : "#3b82f6";
+  const healthColor = health === "good" ? "#4ade80" : health === "fair" ? "#facc15" : "#ef4444";
+  
+  return L.divIcon({
+    className: "",
+    html: `
+      <div style="
+        position: relative;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      ">
+        <div style="
+          width: 24px;
+          height: 24px;
+          background: ${color};
+          border-radius: 50%;
+          border: 2px solid #fff;
+          box-shadow: 0 2px 6px rgba(0,0,0,.25);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+        ">
+          <svg width="16" height="16" viewBox="0 0 640 640">
+            <path fill="white" d="M135 155.4L165.3 205.9C161.3 209.4 157.3 213.1 153.3 217.1C82.3 288.1 93.1 368.1 120.6 408.4C125.6 415.7 135.8 415.7 142 409.4L268.1 283.3C270.4 292.6 272.4 303.6 273.7 316.2C278.6 362.8 274.2 431.3 247.3 524.5C240 549.8 258.6 576 285.8 576L369.9 576C389.9 576 407.5 561 409.5 540.3C418.7 444.8 403.6 338.3 375.2 256L478.7 256C481.5 256 484.1 254.5 485.6 252.1L505.2 219.4C508.3 214.2 515.8 214.2 518.9 219.4L538.5 252.1C539.9 254.5 542.6 256 545.4 256L592.1 256C601 256 608.2 248.8 606.6 240.1C597.5 192.2 548.5 128 448.2 128C404.5 128 370.6 140.2 345.4 157.8C328.7 113.4 280.2 64 192.2 64C91.8 64 42.8 128.2 33.7 176.1C32.1 184.8 39.3 192 48.2 192L94.9 192C97.7 192 100.3 190.5 101.8 188.1L121.3 155.4C124.4 150.2 131.9 150.2 135 155.4zM324.2 256C352.8 330.1 370.2 433.9 362.5 528L296.3 528C322.1 435.1 327 363.5 321.5 311.2C319.3 289.7 315.3 271.3 310.1 256L324.2 256z"/>
+          </svg>
+        </div>
+      </div>`,
+    iconSize: [32, 32],
+    iconAnchor: [16, 16],
+  });
+};
 
 function FitBounds({ gardens }: { gardens: Garden[] }) {
   const map = useMap();
   useEffect(() => {
     if (!gardens?.length) return;
-    const b = L.latLngBounds(gardens.map((g) => [g.lat, g.lng] as [number, number]));
-    map.fitBounds(b, { padding: [40, 40] });
+    
+    // Small delay to ensure map is fully loaded
+    const timer = setTimeout(() => {
+      const bounds = L.latLngBounds(gardens.map((g) => [g.lat, g.lng] as [number, number]));
+      map.fitBounds(bounds, { 
+        padding: [20, 20],
+        maxZoom: 15 // Prevent zooming in too much for single points
+      });
+    }, 100);
+    
+    return () => clearTimeout(timer);
   }, [gardens, map]);
   return null;
 }
@@ -120,11 +141,15 @@ export function MapView({ gardens, onGardenClick }: MapViewProps) {
           attribution="&copy; OpenStreetMap contributors"
         />
 
+        {/* Auto-fit bounds to show all gardens */}
+        <FitBounds gardens={gardens} />
+
         {/* Markers for your gardens */}
         {gardens.map((g) => (
           <Marker
             key={g.id}
             position={[g.lat, g.lng]}
+            icon={createPalmTreeIcon(g.type, g.health, g.floodRisk)}
             eventHandlers={{ click: () => setSelectedGarden(g) }}
           >
             <Popup>
@@ -238,29 +263,25 @@ export function MapView({ gardens, onGardenClick }: MapViewProps) {
         </div>
       )}
 
-      {/* Legend (kept from your UI) */}
-      <div className="absolute bottom-4 left-4 bg-white rounded-lg p-3 shadow-lg z-[1000]">
-        <h4 className="text-sm mb-2">Legend</h4>
+      {/* Legend */}
+      <div className="absolute bottom-4 left-4 bg-white rounded-lg p-3 shadow-lg z-9999 border max-w-xs">
+        <h4 className="text-sm font-medium mb-2 text-gray-800">Legend</h4>
         <div className="space-y-1 text-xs">
           <div className="flex items-center gap-2">
-            <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+            <div className="w-4 h-4 bg-green-500 rounded-full flex items-center justify-center">
+              <svg width="12" height="12" viewBox="0 0 640 640">
+                <path fill="white" d="M135 155.4L165.3 205.9C161.3 209.4 157.3 213.1 153.3 217.1C82.3 288.1 93.1 368.1 120.6 408.4C125.6 415.7 135.8 415.7 142 409.4L268.1 283.3C270.4 292.6 272.4 303.6 273.7 316.2C278.6 362.8 274.2 431.3 247.3 524.5C240 549.8 258.6 576 285.8 576L369.9 576C389.9 576 407.5 561 409.5 540.3C418.7 444.8 403.6 338.3 375.2 256L478.7 256C481.5 256 484.1 254.5 485.6 252.1L505.2 219.4C508.3 214.2 515.8 214.2 518.9 219.4L538.5 252.1C539.9 254.5 542.6 256 545.4 256L592.1 256C601 256 608.2 248.8 606.6 240.1C597.5 192.2 548.5 128 448.2 128C404.5 128 370.6 140.2 345.4 157.8C328.7 113.4 280.2 64 192.2 64C91.8 64 42.8 128.2 33.7 176.1C32.1 184.8 39.3 192 48.2 192L94.9 192C97.7 192 100.3 190.5 101.8 188.1L121.3 155.4C124.4 150.2 131.9 150.2 135 155.4zM324.2 256C352.8 330.1 370.2 433.9 362.5 528L296.3 528C322.1 435.1 327 363.5 321.5 311.2C319.3 289.7 315.3 271.3 310.1 256L324.2 256z"/>
+              </svg>
+            </div>
             <span>VG - Verge Garden</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-            <span>BS - Bioswale</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="flex gap-1">
-              <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-              <div className="w-2 h-2 bg-yellow-400 rounded-full"></div>
-              <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+            <div className="w-4 h-4 bg-blue-500 rounded-full flex items-center justify-center">
+              <svg width="12" height="12" viewBox="0 0 640 640">
+                <path fill="white" d="M135 155.4L165.3 205.9C161.3 209.4 157.3 213.1 153.3 217.1C82.3 288.1 93.1 368.1 120.6 408.4C125.6 415.7 135.8 415.7 142 409.4L268.1 283.3C270.4 292.6 272.4 303.6 273.7 316.2C278.6 362.8 274.2 431.3 247.3 524.5C240 549.8 258.6 576 285.8 576L369.9 576C389.9 576 407.5 561 409.5 540.3C418.7 444.8 403.6 338.3 375.2 256L478.7 256C481.5 256 484.1 254.5 485.6 252.1L505.2 219.4C508.3 214.2 515.8 214.2 518.9 219.4L538.5 252.1C539.9 254.5 542.6 256 545.4 256L592.1 256C601 256 608.2 248.8 606.6 240.1C597.5 192.2 548.5 128 448.2 128C404.5 128 370.6 140.2 345.4 157.8C328.7 113.4 280.2 64 192.2 64C91.8 64 42.8 128.2 33.7 176.1C32.1 184.8 39.3 192 48.2 192L94.9 192C97.7 192 100.3 190.5 101.8 188.1L121.3 155.4C124.4 150.2 131.9 150.2 135 155.4zM324.2 256C352.8 330.1 370.2 433.9 362.5 528L296.3 528C322.1 435.1 327 363.5 321.5 311.2C319.3 289.7 315.3 271.3 310.1 256L324.2 256z"/>
+              </svg>
             </div>
-            <span>Health Status</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
-            <span>Flood Alert</span>
+            <span>BS - Bioswale</span>
           </div>
         </div>
       </div>

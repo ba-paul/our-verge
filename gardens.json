@@ -1,0 +1,207 @@
+{
+    "id":"1",
+    "name":"Riverside Verge Garden",
+    "location":"Main St & River Ave, Portland",
+    "type":"VG",
+    "imageUrl":"https://images.unsplash.com/photo-1699616784901-836039b5cead?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1cmJhbiUyMGdhcmRlbiUyMHBhcmt8ZW58MXx8fHwxNzU3NjQxMzUzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    "health":"good",
+    "soilMoisture":75,
+    "pH":6.8,
+    "waterDepth":12,
+    "floodRisk":"low",
+    "lat":-26.8241352382323,
+    "lng":153.0549933062039,
+    "plants":[
+       {
+          "name":"Pacific Ninebark",
+          "scientificName":"Physocarpus capitatus",
+          "status":"healthy"
+       },
+       {
+          "name":"Oregon Grape",
+          "scientificName":"Mahonia aquifolium",
+          "status":"healthy"
+       },
+       {
+          "name":"Red Flowering Currant",
+          "scientificName":"Ribes sanguineum",
+          "status":"needs-attention"
+       }
+    ],
+    "comments":[
+       {
+          "id":"1",
+          "author":"Sarah M.",
+          "date":"2 days ago",
+          "content":"Completed weekly weeding and noticed new growth on the ninebark shrubs.",
+          "type":"maintenance"
+       },
+       {
+          "id":"2",
+          "author":"Mike T.",
+          "date":"1 week ago",
+          "content":"Some of the currant plants look like they need pruning.",
+          "type":"observation"
+       }
+    ]
+ },
+ {
+    "id":"2",
+    "name":"Downtown Bioswale",
+    "location":"5th Ave & Pine St, Seattle",
+    "type":"BS",
+    "imageUrl":"https://images.unsplash.com/photo-1666228459069-d308cbea796b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiaW9zd2FsZSUyMHJhaW4lMjBnYXJkZW58ZW58MXx8fHwxNzU3NjQxMzU0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    "health":"fair",
+    "soilMoisture":85,
+    "pH":7.2,
+    "waterDepth":18,
+    "floodRisk":"medium",
+    "lat":45,
+    "lng":60,
+    "plants":[
+       {
+          "name":"Sedge",
+          "scientificName":"Carex obnupta",
+          "status":"healthy"
+       },
+       {
+          "name":"Douglas Iris",
+          "scientificName":"Iris douglasiana",
+          "status":"healthy"
+       },
+       {
+          "name":"Rushes",
+          "scientificName":"Juncus patens",
+          "status":"poor"
+       }
+    ],
+    "comments":[
+       {
+          "id":"3",
+          "author":"City Maintenance",
+          "date":"3 days ago",
+          "content":"Drainage inspection completed. Water flow is adequate but monitoring needed.",
+          "type":"maintenance"
+       }
+    ]
+ },
+ {
+    "id":"3",
+    "name":"Hillside Native Garden",
+    "location":"Oak St Slope, San Francisco",
+    "type":"VG",
+    "imageUrl":"https://images.unsplash.com/photo-1706644533651-0b8cf3909f97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx2ZXJnZSUyMGdhcmRlbiUyMHBsYW50c3xlbnwxfHx8fDE3NTc2NDEzNTN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    "health":"good",
+    "soilMoisture":65,
+    "pH":6.5,
+    "waterDepth":8,
+    "floodRisk":"low",
+    "lat":70,
+    "lng":25,
+    "plants":[
+       {
+          "name":"California Poppies",
+          "scientificName":"Eschscholzia californica",
+          "status":"healthy"
+       },
+       {
+          "name":"Lavender",
+          "scientificName":"Lavandula stoechas",
+          "status":"healthy"
+       },
+       {
+          "name":"Sage",
+          "scientificName":"Salvia leucantha",
+          "status":"healthy"
+       }
+    ],
+    "comments":[
+       {
+          "id":"4",
+          "author":"Garden Volunteer",
+          "date":"5 days ago",
+          "content":"Added mulch around the poppy beds and removed invasive weeds.",
+          "type":"maintenance"
+       }
+    ]
+ },
+ {
+    "id":"4",
+    "name":"Community Wildflower Strip",
+    "location":"Elm Ave Median, Denver",
+    "type":"VG",
+    "imageUrl":"https://images.unsplash.com/photo-1754373647291-2206bdafbd5f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxuYXRpdmUlMjBwbGFudHMlMjB3aWxkZmxvd2Vyc3xlbnwxfHx8fDE3NTc2NDEzNTR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    "health":"good",
+    "soilMoisture":70,
+    "pH":7.0,
+    "waterDepth":5,
+    "floodRisk":"low",
+    "lat":35,
+    "lng":80,
+    "plants":[
+       {
+          "name":"Black-eyed Susan",
+          "scientificName":"Rudbeckia hirta",
+          "status":"healthy"
+       },
+       {
+          "name":"Purple Coneflower",
+          "scientificName":"Echinacea purpurea",
+          "status":"healthy"
+       },
+       {
+          "name":"Native Grasses",
+          "scientificName":"Bouteloua gracilis",
+          "status":"needs-attention"
+       }
+    ],
+    "comments":[
+       {
+          "id":"5",
+          "author":"Lisa K.",
+          "date":"1 day ago",
+          "content":"Beautiful bloom season! The coneflowers are attracting lots of bees.",
+          "type":"observation"
+       }
+    ]
+ },
+ {
+    "id":"5",
+    "name":"Flood Management Bioswale",
+    "location":"Industrial Way, Portland",
+    "type":"BS",
+    "imageUrl":"https://images.unsplash.com/photo-1695462131713-7bbfb8317ac4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tdW5pdHklMjBnYXJkZW4lMjBtYWludGVuYW5jZXxlbnwxfHx8fDE3NTc2NDEzNTV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+    "health":"poor",
+    "soilMoisture":95,
+    "pH":7.8,
+    "waterDepth":22,
+    "floodRisk":"high",
+    "lat":55,
+    "lng":15,
+    "plants":[
+       {
+          "name":"Cattails",
+          "scientificName":"Typha latifolia",
+          "status":"healthy"
+       },
+       {
+          "name":"Water Iris",
+          "scientificName":"Iris pseudacorus",
+          "status":"needs-attention"
+       },
+       {
+          "name":"Willow Shrubs",
+          "scientificName":"Salix lucida",
+          "status":"poor"
+       }
+    ],
+    "comments":[
+       {
+          "id":"6",
+          "author":"Emergency Services",
+          "date":"Today",
+          "content":"High water alert - monitoring for potential overflow. Drainage maintenance scheduled.",
+          "type":"concern"
+       }
+    ]
+ }

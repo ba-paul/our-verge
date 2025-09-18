@@ -1,0 +1,1255 @@
+[
+  {
+    "id": "1",
+    "name": "South Bank Riverside Verge",
+    "location": "Grey St & Tribune St, Brisbane",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1624523994693-a2353f8b69bf?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "health": "fair",
+    "soilMoisture": 61,
+    "pH": 6.6,
+    "waterDepth": 60,
+    "floodRisk": "medium",
+    "lat": -27.4811,
+    "lng": 153.0234,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "1",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "2",
+        "author": "Urban Greening Program",
+        "date": "2025-09-10",
+        "content": "Soil moisture trending high; reduce watering by 15%.",
+        "type": "community"
+      },
+      {
+        "id": "3",
+        "author": "Local Volunteer",
+        "date": "2025-09-08",
+        "content": "Sediment removed from inlet grate after rainfall.",
+        "type": "maintenance"
+      },
+      {
+        "id": "4",
+        "author": "Council Crew",
+        "date": "2025-09-02",
+        "content": "Drip line repaired; flow rates rebalanced.",
+        "type": "concern"
+      },
+      {
+        "id": "5",
+        "author": "Council Crew",
+        "date": "2025-09-07",
+        "content": "Pruned back sightline near driveway for safety.",
+        "type": "community"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Roma Street Bioswale",
+    "location": "Roma St Parklands, Brisbane",
+    "type": "BS",
+    "imageUrl": "https://images.unsplash.com/photo-1520302630591-fd1c66edc19d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "health": "poor",
+    "soilMoisture": 62,
+    "pH": 6.7,
+    "waterDepth": 70,
+    "floodRisk": "high",
+    "lat": -27.4647,
+    "lng": 153.0192,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "2",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "3",
+        "author": "Site Supervisor",
+        "date": "2025-09-11",
+        "content": "pH retest scheduled; last reading slightly alkaline.",
+        "type": "observation"
+      },
+      {
+        "id": "4",
+        "author": "Maintenance Contractor",
+        "date": "2025-09-11",
+        "content": "Drip line repaired; flow rates rebalanced.",
+        "type": "observation"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Bulimba Riverside Verge",
+    "location": "Oxford St & Riding Rd, Bulimba",
+    "type": "VG",
+    "imageUrl": "https://plus.unsplash.com/premium_photo-1749455388712-bddc162cd393?q=80&w=790&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "health": "good",
+    "soilMoisture": 63,
+    "pH": 6.8,
+    "waterDepth": 80,
+    "floodRisk": "low",
+    "lat": -27.4498,
+    "lng": 153.0563,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "3",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "4",
+        "author": "Neighbour Watch",
+        "date": "2025-09-01",
+        "content": "Edge heave noted from foot traffic; add stepping stones.",
+        "type": "observation"
+      },
+      {
+        "id": "5",
+        "author": "Site Supervisor",
+        "date": "2025-09-04",
+        "content": "Mulch topped up along the exposed edges.",
+        "type": "concern"
+      },
+      {
+        "id": "6",
+        "author": "Local Volunteer",
+        "date": "2025-09-09",
+        "content": "Noted minor weed regrowth near path interface.",
+        "type": "community"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Broadbeach Bioswale",
+    "location": "Gold Coast Hwy & Victoria Ave, Broadbeach",
+    "type": "BS",
+    "imageUrl": "https://plus.unsplash.com/premium_photo-1757872315675-b4324c1cfb30?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "health": "fair",
+    "soilMoisture": 64,
+    "pH": 6.9,
+    "waterDepth": 90,
+    "floodRisk": "medium",
+    "lat": -28.0275,
+    "lng": 153.4323,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "4",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "5",
+        "author": "Council Crew",
+        "date": "2025-09-17",
+        "content": "Soil moisture trending high; reduce watering by 15%.",
+        "type": "community"
+      },
+      {
+        "id": "6",
+        "author": "Neighbour Watch",
+        "date": "2025-09-08",
+        "content": "Irrigation checked and emitters flushed.",
+        "type": "observation"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Noosa River Verge",
+    "location": "Gympie Terrace, Noosaville",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1567106931976-ef198a8f1b6b?q=80&w=871&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "health": "poor",
+    "soilMoisture": 65,
+    "pH": 6.5,
+    "waterDepth": 100,
+    "floodRisk": "high",
+    "lat": -26.398,
+    "lng": 153.0594,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "5",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "6",
+        "author": "Council Crew",
+        "date": "2025-09-02",
+        "content": "Trialing coir logs to slow flow at entry point.",
+        "type": "observation"
+      },
+      {
+        "id": "7",
+        "author": "Urban Greening Program",
+        "date": "2025-09-07",
+        "content": "Installed bird bath; immediate use by local lorikeets.",
+        "type": "observation"
+      },
+      {
+        "id": "8",
+        "author": "Local Volunteer",
+        "date": "2025-09-03",
+        "content": "Soil moisture trending high; reduce watering by 15%.",
+        "type": "community"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Kangaroo Point Verge Garden",
+    "location": "Main St & River Tce, Kangaroo Point",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1727523368965-a698e35533d0?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "health": "good",
+    "soilMoisture": 66,
+    "pH": 6.6,
+    "waterDepth": 110,
+    "floodRisk": "low",
+    "lat": -27.4735,
+    "lng": 153.0367,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "6",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "7",
+        "author": "Urban Greening Program",
+        "date": "2025-08-29",
+        "content": "Trialing coir logs to slow flow at entry point.",
+        "type": "community"
+      },
+      {
+        "id": "8",
+        "author": "Urban Greening Program",
+        "date": "2025-08-28",
+        "content": "pH retest scheduled; last reading slightly alkaline.",
+        "type": "community"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "West End Bioswale",
+    "location": "Boundary St & Vulture St, West End",
+    "type": "BS",
+    "imageUrl": "https://images.unsplash.com/photo-1592124964982-60bc3173edc1?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "health": "fair",
+    "soilMoisture": 67,
+    "pH": 6.7,
+    "waterDepth": 120,
+    "floodRisk": "medium",
+    "lat": -27.4825,
+    "lng": 153.0122,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "7",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "8",
+        "author": "Parks & Gardens",
+        "date": "2025-08-29",
+        "content": "Installed bird bath; immediate use by local lorikeets.",
+        "type": "concern"
+      },
+      {
+        "id": "9",
+        "author": "Parks & Gardens",
+        "date": "2025-09-09",
+        "content": "pH retest scheduled; last reading slightly alkaline.",
+        "type": "maintenance"
+      },
+      {
+        "id": "10",
+        "author": "Local Volunteer",
+        "date": "2025-09-15",
+        "content": "Drip line repaired; flow rates rebalanced.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "New Farm Park Verge",
+    "location": "Brunswick St & Sydney St, New Farm",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1592111469469-273a1792c601?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "health": "poor",
+    "soilMoisture": 68,
+    "pH": 6.8,
+    "waterDepth": 130,
+    "floodRisk": "high",
+    "lat": -27.4672,
+    "lng": 153.0491,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "8",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "9",
+        "author": "Horticulture Lead",
+        "date": "2025-09-03",
+        "content": "Trialing coir logs to slow flow at entry point.",
+        "type": "concern"
+      },
+      {
+        "id": "10",
+        "author": "Neighbour Watch",
+        "date": "2025-09-16",
+        "content": "Drip line repaired; flow rates rebalanced.",
+        "type": "maintenance"
+      },
+      {
+        "id": "11",
+        "author": "Site Supervisor",
+        "date": "2025-09-10",
+        "content": "pH retest scheduled; last reading slightly alkaline.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Surfers Paradise Bioswale",
+    "location": "Ferny Ave & Cavill Ave, Surfers Paradise",
+    "type": "BS",
+    "imageUrl": "https://plus.unsplash.com/premium_photo-1664123873410-02a2f6e9fdac?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "health": "good",
+    "soilMoisture": 69,
+    "pH": 6.9,
+    "waterDepth": 140,
+    "floodRisk": "low",
+    "lat": -28.0027,
+    "lng": 153.429,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "9",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "10",
+        "author": "Urban Greening Program",
+        "date": "2025-09-16",
+        "content": "Trialing coir logs to slow flow at entry point.",
+        "type": "observation"
+      },
+      {
+        "id": "11",
+        "author": "Neighbour Watch",
+        "date": "2025-09-05",
+        "content": "New planting day with 12 volunteers\u201450 tubestock installed.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Mooloolaba Foreshore Verge",
+    "location": "Mooloolaba Esplanade, Mooloolaba",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1495954484750-af469f2f9be5",
+    "health": "fair",
+    "soilMoisture": 70,
+    "pH": 6.5,
+    "waterDepth": 150,
+    "floodRisk": "medium",
+    "lat": -26.6818,
+    "lng": 153.1197,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "10",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "11",
+        "author": "Neighbour Watch",
+        "date": "2025-09-04",
+        "content": "Noted minor weed regrowth near path interface.",
+        "type": "community"
+      },
+      {
+        "id": "12",
+        "author": "Maintenance Contractor",
+        "date": "2025-09-07",
+        "content": "Soil moisture trending high; reduce watering by 15%.",
+        "type": "concern"
+      },
+      {
+        "id": "13",
+        "author": "Community Group",
+        "date": "2025-09-09",
+        "content": "Graffiti cleaned from bollards; no plant damage.",
+        "type": "observation"
+      }
+    ]
+  },
+  {
+    "id": "11",
+    "name": "Southport Park Verge",
+    "location": "Queen St & Nerang St, Southport",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1674454979950-8cfb4659fed3?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "health": "poor",
+    "soilMoisture": 71,
+    "pH": 6.6,
+    "waterDepth": 160,
+    "floodRisk": "high",
+    "lat": -27.9664,
+    "lng": 153.3976,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "11",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "12",
+        "author": "Site Supervisor",
+        "date": "2025-09-11",
+        "content": "Dog off\u2011leash damage to young plantings; stakes reinstated.",
+        "type": "observation"
+      },
+      {
+        "id": "13",
+        "author": "Urban Greening Program",
+        "date": "2025-08-28",
+        "content": "Installed bird bath; immediate use by local lorikeets.",
+        "type": "observation"
+      },
+      {
+        "id": "14",
+        "author": "Parks & Gardens",
+        "date": "2025-09-13",
+        "content": "Native bees active around flowering Grevillea.",
+        "type": "community"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Coolangatta Bioswale",
+    "location": "Marine Parade, Coolangatta",
+    "type": "BS",
+    "imageUrl": "https://images.unsplash.com/photo-1463107971871-fbac9ddb920f",
+    "health": "good",
+    "soilMoisture": 72,
+    "pH": 6.7,
+    "waterDepth": 17,
+    "floodRisk": "low",
+    "lat": -28.1679,
+    "lng": 153.5363,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "12",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "13",
+        "author": "Parks & Gardens",
+        "date": "2025-09-10",
+        "content": "Storm event caused silt buildup; swale reshaped slightly.",
+        "type": "concern"
+      },
+      {
+        "id": "14",
+        "author": "Site Supervisor",
+        "date": "2025-09-04",
+        "content": "Storm event caused silt buildup; swale reshaped slightly.",
+        "type": "concern"
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Caloundra Verge Strip",
+    "location": "Bulcock Beach Esplanade, Caloundra",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1482192596544-9eb780fc7f66",
+    "health": "fair",
+    "soilMoisture": 73,
+    "pH": 6.8,
+    "waterDepth": 180,
+    "floodRisk": "medium",
+    "lat": -26.8053,
+    "lng": 153.1331,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "13",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "14",
+        "author": "Horticulture Lead",
+        "date": "2025-08-28",
+        "content": "Drip line repaired; flow rates rebalanced.",
+        "type": "concern"
+      },
+      {
+        "id": "15",
+        "author": "Council Crew",
+        "date": "2025-09-11",
+        "content": "Soil moisture trending high; reduce watering by 15%.",
+        "type": "community"
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Palm Beach Bioswale",
+    "location": "Gold Coast Hwy & Palm Beach Ave, Palm Beach",
+    "type": "BS",
+    "imageUrl": "https://plus.unsplash.com/premium_photo-1681955753848-a9b908b09429?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "health": "poor",
+    "soilMoisture": 74,
+    "pH": 6.9,
+    "waterDepth": 190,
+    "floodRisk": "high",
+    "lat": -28.1173,
+    "lng": 153.4716,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "14",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "15",
+        "author": "Maintenance Contractor",
+        "date": "2025-09-06",
+        "content": "Pruned back sightline near driveway for safety.",
+        "type": "community"
+      },
+      {
+        "id": "16",
+        "author": "Horticulture Lead",
+        "date": "2025-09-14",
+        "content": "Litter collected; installed temporary signage about runoff.",
+        "type": "maintenance"
+      },
+      {
+        "id": "17",
+        "author": "Parks & Gardens",
+        "date": "2025-09-06",
+        "content": "Pruned back sightline near driveway for safety.",
+        "type": "concern"
+      },
+      {
+        "id": "18",
+        "author": "Waterways Team",
+        "date": "2025-09-11",
+        "content": "Mulch topped up along the exposed edges.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "15",
+    "name": "Redcliffe Foreshore Verge",
+    "location": "Marine Parade, Redcliffe",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1697767174349-80d5c6d32e4c?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "health": "good",
+    "soilMoisture": 75,
+    "pH": 6.5,
+    "waterDepth": 200,
+    "floodRisk": "low",
+    "lat": -27.2309,
+    "lng": 153.1156,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "15",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "16",
+        "author": "Waterways Team",
+        "date": "2025-09-09",
+        "content": "Noted minor weed regrowth near path interface.",
+        "type": "concern"
+      },
+      {
+        "id": "17",
+        "author": "Council Crew",
+        "date": "2025-09-09",
+        "content": "Graffiti cleaned from bollards; no plant damage.",
+        "type": "concern"
+      },
+      {
+        "id": "18",
+        "author": "Council Crew",
+        "date": "2025-09-16",
+        "content": "Drip line repaired; flow rates rebalanced.",
+        "type": "community"
+      },
+      {
+        "id": "19",
+        "author": "Waterways Team",
+        "date": "2025-09-08",
+        "content": "Detected aphids on Dianella; applied eco-oil.",
+        "type": "observation"
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "name": "Currumbin Creek Bioswale",
+    "location": "Duringan St, Currumbin",
+    "type": "BS",
+    "imageUrl": "https://images.unsplash.com/photo-1582591672577-24379fff49c1?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "health": "fair",
+    "soilMoisture": 76,
+    "pH": 6.6,
+    "waterDepth": 21,
+    "floodRisk": "medium",
+    "lat": -28.1352,
+    "lng": 153.4824,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "16",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "17",
+        "author": "Neighbour Watch",
+        "date": "2025-09-05",
+        "content": "Drip line repaired; flow rates rebalanced.",
+        "type": "observation"
+      },
+      {
+        "id": "18",
+        "author": "Site Supervisor",
+        "date": "2025-09-01",
+        "content": "Soil moisture trending high; reduce watering by 15%.",
+        "type": "community"
+      },
+      {
+        "id": "19",
+        "author": "Site Supervisor",
+        "date": "2025-08-29",
+        "content": "Irrigation checked and emitters flushed.",
+        "type": "community"
+      }
+    ]
+  },
+  {
+    "id": "17",
+    "name": "Maroochy River Verge",
+    "location": "Duporth Ave, Maroochydore",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1756575302990-738cb10901ef?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "health": "poor",
+    "soilMoisture": 77,
+    "pH": 6.7,
+    "waterDepth": 220,
+    "floodRisk": "high",
+    "lat": -26.65,
+    "lng": 153.09,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "17",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "18",
+        "author": "Horticulture Lead",
+        "date": "2025-08-28",
+        "content": "Sediment removed from inlet grate after rainfall.",
+        "type": "maintenance"
+      },
+      {
+        "id": "19",
+        "author": "Site Supervisor",
+        "date": "2025-09-05",
+        "content": "Edge heave noted from foot traffic; add stepping stones.",
+        "type": "observation"
+      }
+    ]
+  },
+  {
+    "id": "18",
+    "name": "Broadwater Parklands Verge",
+    "location": "Marine Parade, Southport",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1581399792816-273a5747e751?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "health": "good",
+    "soilMoisture": 78,
+    "pH": 6.8,
+    "waterDepth": 23,
+    "floodRisk": "low",
+    "lat": -27.967,
+    "lng": 153.414,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "18",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "19",
+        "author": "Urban Greening Program",
+        "date": "2025-09-14",
+        "content": "pH retest scheduled; last reading slightly alkaline.",
+        "type": "observation"
+      },
+      {
+        "id": "20",
+        "author": "Local Volunteer",
+        "date": "2025-09-08",
+        "content": "Installed bird bath; immediate use by local lorikeets.",
+        "type": "observation"
+      },
+      {
+        "id": "21",
+        "author": "Parks & Gardens",
+        "date": "2025-09-04",
+        "content": "Litter collected; installed temporary signage about runoff.",
+        "type": "observation"
+      }
+    ]
+  },
+  {
+    "id": "19",
+    "name": "Robina Bioswale",
+    "location": "Robina Town Centre Dr, Robina",
+    "type": "BS",
+    "imageUrl": "https://images.unsplash.com/photo-1695243694565-3f93ab0135ec?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "health": "fair",
+    "soilMoisture": 79,
+    "pH": 6.9,
+    "waterDepth": 155,
+    "floodRisk": "medium",
+    "lat": -28.0711,
+    "lng": 153.3794,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "19",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "20",
+        "author": "Maintenance Contractor",
+        "date": "2025-09-09",
+        "content": "Noted minor weed regrowth near path interface.",
+        "type": "observation"
+      },
+      {
+        "id": "21",
+        "author": "Community Group",
+        "date": "2025-09-04",
+        "content": "Soil moisture trending high; reduce watering by 15%.",
+        "type": "maintenance"
+      }
+    ]
+  },
+  {
+    "id": "20",
+    "name": "Caboolture Verge Garden",
+    "location": "King St, Caboolture",
+    "type": "VG",
+    "imageUrl": "https://images.unsplash.com/photo-1756083645232-b05c303cf391?q=80&w=873&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "health": "poor",
+    "soilMoisture": 80,
+    "pH": 6.5,
+    "waterDepth": 534,
+    "floodRisk": "high",
+    "lat": -27.0846,
+    "lng": 152.9512,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "20",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "21",
+        "author": "Maintenance Contractor",
+        "date": "2025-09-15",
+        "content": "Native bees active around flowering Grevillea.",
+        "type": "concern"
+      },
+      {
+        "id": "22",
+        "author": "Maintenance Contractor",
+        "date": "2025-09-04",
+        "content": "pH retest scheduled; last reading slightly alkaline.",
+        "type": "observation"
+      },
+      {
+        "id": "23",
+        "author": "Community Group",
+        "date": "2025-09-17",
+        "content": "Litter collected; installed temporary signage about runoff.",
+        "type": "concern"
+      },
+      {
+        "id": "24",
+        "author": "Waterways Team",
+        "date": "2025-08-30",
+        "content": "Two Lomandra plants replaced near the north corner.",
+        "type": "concern"
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "name": "Tewantin Bioswale",
+    "location": "Hilton Tce, Tewantin",
+    "type": "BS",
+    "imageUrl": "https://images.unsplash.com/photo-1619509943979-d44221782247?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "health": "good",
+    "soilMoisture": 81,
+    "pH": 6.6,
+    "waterDepth": 60,
+    "floodRisk": "low",
+    "lat": -26.391,
+    "lng": 153.0394,
+    "plants": [
+      {
+        "name": "Lomandra",
+        "scientificName": "Lomandra longifolia",
+        "status": "healthy"
+      },
+      {
+        "name": "Banksia",
+        "scientificName": "Banksia integrifolia",
+        "status": "needs-attention"
+      },
+      {
+        "name": "Paperbark",
+        "scientificName": "Melaleuca quinquenervia",
+        "status": "healthy"
+      }
+    ],
+    "comments": [
+      {
+        "id": "21",
+        "author": "Council Staff",
+        "date": "Recent",
+        "content": "Routine maintenance check complete.",
+        "type": "maintenance"
+      },
+      {
+        "id": "22",
+        "author": "Parks & Gardens",
+        "date": "2025-09-11",
+        "content": "pH retest scheduled; last reading slightly alkaline.",
+        "type": "maintenance"
+      },
+      {
+        "id": "23",
+        "author": "Community Group",
+        "date": "2025-09-10",
+        "content": "Litter collected; installed temporary signage about runoff.",
+        "type": "community"
+      },
+      {
+        "id": "24",
+        "author": "Waterways Team",
+        "date": "2025-09-15",
+        "content": "Native bees active around flowering Grevillea.",
+        "type": "observation"
+      }
+    ]
+  }
+]
