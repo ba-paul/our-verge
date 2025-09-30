@@ -146,7 +146,7 @@ export function GardenDetailView({ garden, onBack }: GardenDetailViewProps) {
               </div>
               <div className="text-center p-3 bg-purple-50 rounded-lg">
                 <div className="text-sm text-gray-600">Water Depth</div>
-                <div className="text-lg font-medium">{garden.waterDepth}cm</div>
+                <div className="text-lg font-medium">{garden.waterDepth}mm</div>
               </div>
             </div>
           </CardContent>
