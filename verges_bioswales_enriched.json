@@ -1,14 +1,14 @@
 [
   {
     "id": "1",
-    "name": "South Bank Riverside Verge",
+    "name": "Bridgeman Downs Verge",
     "location": "Grey St & Tribune St, Brisbane",
     "type": "VG",
     "imageUrl": "/images/verge-garden-1.jpg",
-    "health": "fair",
+    "health": "good",
     "soilMoisture": 61,
     "pH": 6.6,
-    "waterDepth": 60,
+    "waterDepth": 10,
     "floodRisk": "medium",
     "lat": -27.4811,
     "lng": 153.0234,
@@ -24,8 +24,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
@@ -69,7 +69,7 @@
   },
   {
     "id": "2",
-    "name": "Roma Street Bioswale",
+    "name": "Norman Creek Bioswale",
     "location": "Roma St Parklands, Brisbane",
     "type": "BS",
     "imageUrl": "/images/verge-garden-2.jpeg",
@@ -92,8 +92,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
@@ -146,8 +146,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
@@ -184,8 +184,8 @@
   },
   {
     "id": "4",
-    "name": "Broadbeach Bioswale",
-    "location": "Gold Coast Hwy & Victoria Ave, Broadbeach",
+    "name": "Kedron Brook",
+    "location": "Kedron Brook",
     "type": "BS",
     "imageUrl": "/images/verge-garden-4.jpeg",
     "health": "fair",
@@ -207,8 +207,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
@@ -238,7 +238,7 @@
   },
   {
     "id": "5",
-    "name": "Noosa River Verge",
+    "name": "Noosa River Bioswale",
     "location": "Gympie Terrace, Noosaville",
     "type": "VG",
     "imageUrl": "/images/verge-garden-5.jpeg",
@@ -261,8 +261,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
@@ -322,8 +322,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
@@ -376,8 +376,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
@@ -437,8 +437,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
@@ -498,8 +498,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
@@ -552,8 +552,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
@@ -613,8 +613,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
@@ -674,8 +674,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
@@ -728,8 +728,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
@@ -782,8 +782,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
@@ -850,8 +850,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
@@ -918,8 +918,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
@@ -979,8 +979,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
@@ -1033,8 +1033,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
@@ -1094,8 +1094,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
@@ -1148,8 +1148,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
@@ -1216,8 +1216,8 @@
         "status": "needs-attention"
       },
       {
-        "name": "Paperbark",
-        "scientificName": "Melaleuca quinquenervia",
+        "name": "Evergreen Giant",
+        "scientificName": "Liriope muscari",
         "status": "healthy"
       }
     ],
