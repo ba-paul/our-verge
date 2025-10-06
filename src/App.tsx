@@ -4,8 +4,8 @@ import { GardenFilterBar } from "./components/GardenFilterBar";
 import { MapView } from "./components/MapView";
 import { GardenCard } from "./components/GardenCard";
 import { GardenDetailView } from "./components/GardenDetailView";
-import logo from '../images/the-verge-logo-2.png'; 
-import hero from '../images/verge-banner.jpg'; 
+import logo from '/images/the-verge-logo-2.png'; 
+import hero from '/images/verge-banner.jpg'; 
 import gardensData from '../verges_bioswales_enriched.json';
 
 // Use data from JSON file with proper typing
