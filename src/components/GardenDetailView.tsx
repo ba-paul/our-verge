@@ -11,6 +11,7 @@ interface Plant {
   name: string;
   scientificName: string;
   status: "healthy" | "needs-attention" | "poor";
+  image: string;
 }
 
 interface Comment {
@@ -231,8 +232,13 @@ export function GardenDetailView({ garden, onBack }: GardenDetailViewProps) {
               {garden.plants.map((plant, index) => (
                 <div key={index} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
                   <div>
+                  {plant.image && (
+                    <img src={plant.image} alt={plant.name} className="max-w-plant rounded-lg mb-1" />
+                  )}
+
                     <div className="font-medium">{plant.name}</div>
                     <div className="text-sm text-gray-600 italic">{plant.scientificName}</div>
+
                   </div>
                   <Badge
                     variant={plant.status === "healthy" ? "default" :

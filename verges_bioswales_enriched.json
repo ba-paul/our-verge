@@ -16,17 +16,20 @@
       {
         "name": "Lomandra",
         "scientificName": "Lomandra longifolia",
-        "status": "healthy"
+        "status": "healthy",
+        "image": "/images/Lomandra.jpeg"
       },
       {
         "name": "Banksia",
         "scientificName": "Banksia integrifolia",
-        "status": "needs-attention"
+        "status": "needs-attention",
+        "image": "/images/banksia.jpg"
       },
       {
         "name": "Evergreen Giant",
         "scientificName": "Liriope muscari",
-        "status": "healthy"
+        "status": "healthy",
+        "image": "/images/evergreen-giant.jpeg"
       }
     ],
     "comments": [

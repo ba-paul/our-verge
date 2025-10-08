@@ -1127,6 +1127,11 @@
   .w-px {
     width: 1px;
   }
+  .max-w-plant {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
 
   .max-w-\(--skeleton-width\) {
     max-width: var(--skeleton-width);
