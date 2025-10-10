@@ -35,23 +35,23 @@
     "comments": [
       {
         "id": "1",
-        "author": "Council Staff",
+        "author": "City Council",
         "date": "Recent",
-        "content": "Routine maintenance check complete.",
+        "content": "Pruned street tree and inspected adjacent stormwater gully.",
         "type": "maintenance"
       },
       {
         "id": "2",
-        "author": "Urban Greening Program",
+        "author": "Sarah M.",
         "date": "2025-09-10",
-        "content": "Soil moisture trending high; reduce watering by 15%.",
+        "content": "Weeding completed",
         "type": "community"
       },
       {
         "id": "3",
-        "author": "Local Volunteer",
+        "author": "George D",
         "date": "2025-09-08",
-        "content": "Sediment removed from inlet grate after rainfall.",
+        "content": "Checked the sensor - working well",
         "type": "maintenance"
       },
       {
